@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contenido para Redes Sociales</title>
+	
+	
+<!--META-->	
+	
+<meta name="description" content="Diseño y elaboración de posts, banners, historias y otras imágenes que se sube en las  redes sociales">
+<meta name="keywords" content="diseño gráfico,diseño para redes sociales, diseño de posts,diseño express,diseño gráfico digital,posts,diseño,marqueting,marqueting digital,diseño de contenido,redes sociales,comunity manager,diseño pre pago,servicio de diseño,diseño web,diseño publicitario,diseño de redes sociales">
+<meta name="author" content="Creatify Co.">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+<!--CSS-->
+	
+<link href="dashboardDesktop.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" media="screen and (max-width: 900px)" href= "dashboardMobile.css">	
+	
+<!--SCRIPTS-->
+	
+<script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	
+</head>
+	
+
+<body>
+	
+	<div class="mainContainer">
+
+		
+		<!--Header Menus -->
+		
+	<div class="menuContainer">
+		
+		<!--Desktop Menu -->
+		
+	<header class="nav-down">
+		
+		
+	   <a href="home.html" target="_self"><img src="svg/logoAbCreatify.svg" style="padding-top: 5px;" width="52" alt="Contenido Redes sociales"/></a>
+	   <a href="http://postealo.ec/soporte.html" target="new">Soportes      </a>
+	   <a href="http://postealo.ec/soporte.html"  target="new">Nosotros      </a>
+	   <a href="home.html" target="_self"> Contactos </a> 
+       <a href="http://postealo.ec/contacto.html"  target="new">Home</a>
+
+	
+	</header>
+		
+		<!--Mobile Menu -->
+		
+		
+		<div class="navBarMobile">
+			
+		<div class="logoMobile"><a href="home.html" target="_self"><img src="svg/logoAbCreatify.svg" width="55" style="padding-top: 15px;text-align: left;" alt="Contenido Redes sociales"/></a>
+			</div>
+		<div class="iconMenuMobile">
+	    <button id="boton1" onclick="toggle_div_fun('menuMobile');"><img src="svg/mobileMenuIcon.svg" width="35"  alt=""/></button> 
+			</div>
+			
+		</div>
+		
+		<div class="menuMobile">
+		<nav id="menumobile">
+			
+	    	<a href="home.html" target="_self">Iniciar Sesión </a> 
+	    	<a href="http://postealo.ec/soporte.html" target="new">Soporte      </a>
+			<a href="http://postealo.ec/contacto.html" target="new">Contacto    </a>
+			<a href="http://postealo.ec/contacto.html" target="new">Nosotros    </a>
+          	<button id="btnCerrar" onclick="toggle_div_fun('menumobile');"><img img src="svg/xClose.svg" width="30" alt=""/></button>
+			</nav>
+		
+		</div>
+		
+		
+		<div class="usuarioContainer">
+		
+		<span>Hola, </span>
+		<div id="nombreUsuario" style="padding-right: 20px"><p>Diana</p></div>
+		
+		<div class="dropdown">
+			
+	  <button  onclick="myFunction()" class="dropbtn" style="width: 40px;height: 40px;" ></button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="#">Perfil</a>
+		<a href="#">Biblioteca</a>
+		<a href="#">Logout</a>
+		  </div>
+		</div>
+			
+		</div>
+		
+		</div>
+		
+		
+		
+	<!--Main Section -->
+		
+		
+		
+		<main>
+			
+			
+		<!--Imputs: Formularios -->
+		
+		<div class="imputsContainer">
+			
+		  <div class="ideaInfo">
+			  
+			
+			<h2 id="ideaTitulo" style="text-align: left">Idea uno título</h2>
+			
+			<h3 id="ideaSubitulo" style="text-align: left">Idea uno subtítulo</h3>
+				
+			<h4 id="fecha" style="text-align: left; margin-bottom: 20px; margin-top: 10px">Fecha</h4>
+			
+			<h5 style="text-align: left;margin-bottom: 5px;">Redes sociales</h5>
+				
+			  
+		<fieldset class="checkboxContainer">
+   		
+		<div class="item">
+        <input type="checkbox" id="a">
+        <label for="a">Facebook</label>
+        </div>
+   
+		<div class="item">
+        <input type="checkbox" id="b">
+        <label for="b">Instagram</label>
+        </div>
+			
+		<div class="item">
+        <input type="checkbox" id="c">
+        <label for="c">Twitter</label>
+        </div>
+			
+			
+		</fieldset>
+					  
+		      
+          </div>
+			
+		  <div class="formulariosContainer">
+  
+  		  <form action="/action_page.php">
+			
+		  <label for="fname" >Pregunta 1</label><br>
+		  <textarea type="text" id="pregunta1" name="fname" style="width: 100%; height: 100px;overflow: auto;margin-top: 10px;" wrap="soft"  ></textarea><br>
+			
+			<label for="fname1" >Pregunta 2</label><br>
+		  <textarea type="text" id="pregunta2" name="fname2" style="width: 100%; height: 100px;overflow: auto;" wrap="soft"  ></textarea><br>
+			
+			<label for="fname3" >Pregunta 3</label><br>
+		  <textarea type="text" id="pregunta3" name="fname3" style="width: 100%; height: 100px;overflow: auto;" wrap="soft"  ></textarea><br>
+		  
+		  <div class="enviarBtn"><input type="submit" value="Submit">
+		  </div>	
+				
+			</form>
+		</div>	
+				
+		</div>
+			
+		<!--Ouput: Artes -->
+		
+		<div class="outputContainer">
+			
+			<div class="opcionesContainer">
+	
+			<div class="opcionTitulo1"> Opción 1</div>
+			
+			<div class="opcionTitulo2"> Opción 2 </div>
+				
+			</div>
+			
+			<div class="artesContainer">
+				
+			<div class="FacebookArte1"></div>
+				
+			<div class="FacebookArte2"></div>
+			
+			<div class="InstagramArte1"></div>
+				
+			<div class="InstagramArte2"></div>
+				
+			<div class="TwitterArte1"></div>
+				
+			<div class="TwitterArte2"></div>
+			
+			</div>	
+			
+		</div>
+			
+			
+			
+		<!--Chat -->
+			
+			
+		<div class="chatContainer">
+				
+			<div class="chat">
+			
+			<h2>Chat</h2>
+			
+			</div>
+			
+			<div class="aprobacionContainer">
+				
+				<h4 style="margin-top: 20px;text-align: left;margin-bottom: 50px">Presiona el boton aprobar cuando ya desees descargar el arte final<br>
+				Nota: una vez que apruebas un arte se consumirá uno de tus créditos</h4>
+				
+			<fieldset class="checkboxContainer">
+
+		
+			  <table width="200">
+			    <tr>
+			      <td><label>
+			        <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_0">
+			        Opción 1</label></td>
+		        </tr>
+			    <tr>
+			      <td><label>
+			        <input type="radio" name="RadioGroup1" value="radio" id="RadioGroup1_1">
+			        Opción 2</label></td>
+		        </tr>
+		      </table>
+            </fieldset>
+				
+			<button >Aprobar</button> 
+				
+
+			
+			</div>
+				
+	    </div>
+		
+	</main>
+		
+		
+
+	 
+	
+	<!--Footer -->
+	
+	<footer>
+			
+	<nav class="menuFooter">
+			
+		<a href="home.html" target="_self">Inicio       </a> 
+		<a href="http://postealo.ec/soporte.html" target="new">Soporte      </a>
+		<a href="http://postealo.ec/contacto.html" target="new">Contacto    </a>
+	    <a href="http://postealo.ec/contacto.html" target="new">Nosotros    </a>
+		
+	</nav>
+			
+	<div class="brandFooterContainer"> 
+			
+			<a href="home.html"><img src="svg/logoCreatifyWhite.svg" width="140"  alt=""/></a> <br>
+			<a href="https://www.facebook.com/postealo.ec/" target="new"><img src="svg/FacebookBtnWhite.svg" width="25px" style="margin-right: 10px;margin-left: 10px;" alt=""/></a>
+	        <a href="https://www.instagram.com/postealodesign/" target="new"><img src="svg/instagramBtnWhite.svg" width="25px"  alt=""/></a> 
+			
+		<h4>© POSTEALO.EC<br>
+			© MARKETINGPARATODOS<br>
+			All rights reserved</h4>
+		
+	</div>
+
+	</footer>
+		
+	</div>
+	
+</body>
+	
+	
+	<!--Script Dropdown usuario -->
+	
+	<script>
+
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+		
+	</script>	
+	
+	<!--TOGGLE AND CLOSE MOBILE MENU-->
+
+	<script>	
+			
+    var $searchBox = $('#menumobile');
+	var $searchTrigger = $('#boton1');  
+		  
+	$searchTrigger.on("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $searchBox.toggle();
+});
+		  
+		  
+	$(document).click(function(event){
+    if (!($searchBox.is(event.target)) && ($searchBox.has(event.target).length === 0)){
+        $searchBox.hide();
+    };
+});
+	
+	  </script>
+	  
+	<script>	
+			
+    var $searchBox = $('#menumobile');
+	var $searchTrigger = $('#btnCerrar');  
+		  
+	$searchTrigger.on("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $searchBox.toggle();
+});
+		  
+		  
+	$(document).click(function(event){
+    if (!($searchBox.is(event.target)) && ($searchBox.has(event.target).length === 0)){
+        $searchBox.hide();
+    };
+});
+	
+	  </script>	
+	
+	
+	
+	
+</html>

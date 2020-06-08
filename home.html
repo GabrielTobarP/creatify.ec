@@ -4,12 +4,25 @@
 <meta charset="UTF-8">
 <title>Contenido para Redes Sociales</title>
 	
+	
+<!--META-->	
+	
 <meta name="description" content="Diseño y elaboración de posts, banners, historias y otras imágenes que se sube en las  redes sociales">
 <meta name="keywords" content="diseño gráfico,diseño para redes sociales, diseño de posts,diseño express,diseño gráfico digital,posts,diseño,marqueting,marqueting digital,diseño de contenido,redes sociales,comunity manager,diseño pre pago,servicio de diseño,diseño web,diseño publicitario,diseño de redes sociales">
 <meta name="author" content="Creatify Co.">
 <meta content="width=device-width, initial-scale=1" name="viewport" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link href="main.css" rel="stylesheet" type="text/css">
+	
+<!--CSS-->
+	
+<link href="mainDesktop.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" media="screen and (max-width: 900px)" href= "mainMobile.css">	
+	
+<!--SCRIPTS-->
+	
+<script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	
 </head>
 	
@@ -17,16 +30,226 @@
 <body>
 	
 	<div class="mainContainer">
+
+		
+		<!--Header Menus -->
+		
+	<div class="menuContainer">
+		
+			<!--Desktop Menu -->
+		
+	<header class="nav-down">
+	   
+	   <a href="http://postealo.ec/soporte.html" style="text-align: right; padding-top: 20px" target="new">Soportes      </a>
+	   <a href="http://postealo.ec/soporte.html" style="text-align: right; padding-top: 20px" target="new">Nosotros      </a>
+       <a href="home.html" target="_self"><img src="svg/logoCreatify.svg" width="120" style="padding: 5px" alt="Contenido Redes sociales"/></a>
+	   <a href="home.html" style="text-align: left; padding-top: 20px; padding-left: 5px;" target="_self"> Contactos </a> 
+       <a href="http://postealo.ec/contacto.html" style="text-align: left; padding-top: 20px" target="new">Iniciar sesión    </a>
 	
-	
-	<div class="navBar">
+	</header>
+		
+			<!--Mobile Menu -->
 		
 		
+		<div class="navBarMobile">
+			
+		<div class="logoMobile"><a href="home.html" target="_self"><img src="svg/logoCreatify.svg" width="110" style="padding: 5px;text-align: left;" alt="Contenido Redes sociales"/></a>
+			</div>
+		<div class="iconMenuMobile">
+	    <button id="boton1" onclick="toggle_div_fun('menuMobile');"><img src="svg/mobileMenuIcon.svg" width="35"  alt=""/></button> 
+			</div>
+			
+		</div>
+		
+		<div class="menuMobile">
+		<nav id="menumobile">
+	    	<a href="home.html" target="_self">Iniciar Sesión </a> 
+	    	<a href="http://postealo.ec/soporte.html" target="new">Soporte      </a>
+			<a href="http://postealo.ec/contacto.html" target="new">Contacto    </a>
+			<a href="http://postealo.ec/contacto.html" target="new">Nosotros    </a>
+          	<button id="btnCerrar" onclick="toggle_div_fun('menumobile');"><img img src="svg/xClose.svg" width="30" alt=""/></button>
+			</nav>
 		
 		</div>
+		 
+	</div>
+		
+	<main>
+		
+		
+		<div class="blurBackgroun ">
+		
+		<div class="mainInfoHome">
+		
+			<h1>HACER CONTENIDO PARA REDES <br> SOCIALES NUNCA FUE TAN FACIL</h1>
+			<div class="subtitulo"><h4 >Te presentamos Creatify, una plataforma en línea que te  ofrece contenido y diseño de calidad para Facebook, Instagram y el resto de redes.</h4>
+			</div>
+			
+		<div class="empiezaContainer">
+			
+			<div class="textoEmpieza">
+			
+			<h5>Solicita posts on demand  a 
+                nuestro equipo creativo  que 
+                te atenderá de forma virtual.</h5>
+			
+			</div>
+			
+			<div class="btnEmpieza">
+			
+			<a href="dashboard.html"><button type="button" style=" background: transparent;border: 0px; outline: none;text-align: center;"><img src="svg/btnEmpieza.svg" width="150px" alt=""/></button></a>
+			
+		      </div>
+			
+		   </div>	
+			
+		</div>
+		</div>
+		
+		<div class="optimizaFrase">
+		
+		<h1>OPTIMIZA LOS PROCESOS CREATIVOS DE TU EMPRESA </h1>
+
+	    </div>
+		
+		
+		<div class="ComoFuncionaFrase">
+		
+		<h1>Como Funciona</h1>
+
+	    </div>
+		
+		
+		<div class="comoFuncionaContainer">
+		
+		
+		
+		<div class="paso1">
+		
+		<div class="NumeroPaso1"><h1>1</h1></div>
+	    <div class="textoPaso1"><h2 style="text-align: left">Nuestra plataforma crea una selección de contenido de acuerdo al objetivo que desees lograr</h2><br>
+		<h4 style="text-align: left">Nuestra plataforma crea una selección de contenido de acuerdo al objetivo que desees lograr</h4>	
+			</div>
+	    </div>
+			
+			
+			
+		<div class="paso2">
+		
+		<div class="NumeroPaso2"><h1>2</h1></div>
+	    <div class="textoPaso2"><h2 style="text-align: left">Nuestra plataforma crea una selección de contenido de acuerdo al objetivo que desees lograr</h2><br>
+		<h4 style="text-align: left" >Nuestra plataforma crea una selección de contenido de acuerdo al objetivo que desees lograr</h4>
+			</div>
+	    </div>
+			
+			
+		<div class="paso3">
+		
+		<div class="NumeroPaso3"><h1>3</h1></div>
+	    <div class="textoPaso3"><h2 style="text-align: left">Nuestra plataforma crea una selección de contenido de acuerdo al objetivo que desees lograr</h2><br>
+		<h4 style="text-align: left">Nuestra plataforma crea una selección de contenido de acuerdo al objetivo que desees lograr</h4></div>
+			
+		 </div>
+		</div>
+		
+		</main>
+		
 	
+	
+	
+	<p style="text-align: center; grid-column: 2/3; margin-top: 150px">Contenido de calidad a precios populares <br>y sin esfuerzo </p>
+	
+	<div class="logoanCreatify">
+		
+		<img src="svg/logoAbCreatify.svg" width="95px" alt=""/>
+		
+	</div>
 	
 	</div>
 	
+	<!--Footer -->
+	
+	<footer>
+			
+	<nav class="menuFooter">
+			
+		<a href="home.html" target="_self">Inicio       </a> 
+		<a href="http://postealo.ec/soporte.html" target="new">Soporte      </a>
+		<a href="http://postealo.ec/contacto.html" target="new">Contacto    </a>
+	    <a href="http://postealo.ec/contacto.html" target="new">Nosotros    </a>
+		
+	</nav>
+			
+	<div class="brandFooterContainer"> 
+			
+			<a href="home.html"><img src="svg/logoCreatifyWhite.svg" width="140"  alt=""/></a> <br>
+			<a href="https://www.facebook.com/postealo.ec/" target="new"><img src="svg/FacebookBtnWhite.svg" width="25px" style="margin-right: 10px;margin-left: 10px;" alt=""/></a>
+	        <a href="https://www.instagram.com/postealodesign/" target="new"><img src="svg/instagramBtnWhite.svg" width="25px"  alt=""/></a> 
+			
+		<h4>© POSTEALO.EC<br>
+			© MARKETINGPARATODOS<br>
+			All rights reserved</h4>
+			
+	</div>
+
+	</footer>
+		
+	
 </body>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--TOGGLE AND CLOSE MOBILE MENU-->
+	
+<script>	
+			
+    var $searchBox = $('#menumobile');
+	var $searchTrigger = $('#boton1');  
+		  
+	$searchTrigger.on("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $searchBox.toggle();
+});
+		  
+		  
+	$(document).click(function(event){
+    if (!($searchBox.is(event.target)) && ($searchBox.has(event.target).length === 0)){
+        $searchBox.hide();
+    };
+});
+	
+	  </script>
+	  
+<script>	
+			
+    var $searchBox = $('#menumobile');
+	var $searchTrigger = $('#btnCerrar');  
+		  
+	$searchTrigger.on("click", function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    $searchBox.toggle();
+});
+		  
+		  
+	$(document).click(function(event){
+    if (!($searchBox.is(event.target)) && ($searchBox.has(event.target).length === 0)){
+        $searchBox.hide();
+    };
+});
+	
+	  </script>
+	
+	
+	
+	
+	
+	
 </html>
