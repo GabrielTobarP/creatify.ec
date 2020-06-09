@@ -41,11 +41,8 @@
 	<header class="nav-down">
 		
 		
-	   <a href="home.html" target="_self"><img src="svg/logoAbCreatify.svg" style="padding-top: 5px;" width="52" alt="Contenido Redes sociales"/></a>
-	   <a href="http://postealo.ec/soporte.html" target="new">Soportes      </a>
-	   <a href="http://postealo.ec/soporte.html"  target="new">Nosotros      </a>
-	   <a href="home.html" target="_self"> Contactos </a> 
-       <a href="http://postealo.ec/contacto.html"  target="new">Home</a>
+	   <a href="home.html" target="_self"><img src="svg/logoAbCreatify.svg" style="padding-top: px;" width="52" alt="Contenido Redes sociales"/></a>
+	   
 
 	
 	</header>
@@ -170,25 +167,143 @@
 			
 			<div class="opcionesContainer">
 	
-			<div class="opcionTitulo1"> Opción 1</div>
+			<div class="opcionTitulo1"> <h3>Opción 1</h3></div>
 			
-			<div class="opcionTitulo2"> Opción 2 </div>
+			<div class="opcionTitulo2"> <h3>Opción 2</h3></div>
 				
 			</div>
 			
 			<div class="artesContainer">
 				
-			<div class="FacebookArte1"></div>
+			<div class="FacebookArte1">
 				
-			<div class="FacebookArte2"></div>
+				
+				<!-- Trigger the Modal -->
+			<img id="myImg" src="images/curso marketing avanzaso 2.png" alt="Snow" style="width:100%;max-width:300px">
+
+			<!-- The Modal -->
+			<div id="myModal" class="modal">
+
+			  <!-- The Close Button -->
+			  <span class="close">&times;</span>
+
+			  <!-- Modal Content (The Image) -->
+			  <img class="modal-content" id="img01">
+
+			  <!-- Modal Caption (Image Text) -->
+			  <div id="caption"></div>
+			</div>
+				
+				
+				
+				</div>
+				
+			<div class="FacebookArte2">
+				
+				<!-- Trigger the Modal -->
+			<img id="myImg2"  src="images/post vende mas rapido.png" alt="Snow" style="width:100%;max-width:300px">
+
+			<!-- The Modal -->
+			<div id="myModal2" class="modal">
+
+			  <!-- The Close Button -->
+			  <span class="close2">&times;</span>
+
+			  <!-- Modal Content (The Image) -->
+			  <img class="modal-content" id="img02">
+
+			  <!-- Modal Caption (Image Text) -->
+			  <div id="caption2"></div>
+			</div>
+				
+				</div>
 			
-			<div class="InstagramArte1"></div>
+			<div class="InstagramArte1">
 				
-			<div class="InstagramArte2"></div>
+				<!-- Trigger the Modal -->
+			<img id="myImg3"  src="images/post vende mas rapido.png" alt="Snow" style="width:100%;max-width:300px">
+
+			<!-- The Modal -->
+			<div id="myModal3" class="modal">
+
+			  <!-- The Close Button -->
+			  <span class="close3">&times;</span>
+
+			  <!-- Modal Content (The Image) -->
+			  <img class="modal-content" id="img03">
+
+			  <!-- Modal Caption (Image Text) -->
+			  <div id="caption3"></div>
+			</div>
+			
+				</div>
 				
-			<div class="TwitterArte1"></div>
+			<div class="InstagramArte2">
 				
-			<div class="TwitterArte2"></div>
+				
+					<!-- Trigger the Modal -->
+			<img id="myImg4"  src="images/post vende mas rapido.png" alt="Snow" style="width:100%;max-width:300px">
+
+			<!-- The Modal -->
+			<div id="myModal4" class="modal">
+
+			  <!-- The Close Button -->
+			  <span class="close4">&times;</span>
+
+			  <!-- Modal Content (The Image) -->
+			  <img class="modal-content" id="img04">
+
+			  <!-- Modal Caption (Image Text) -->
+			  <div id="caption4"></div>
+			</div>
+				
+				
+				
+				</div>
+				
+			<div class="TwitterArte1">
+				
+				
+		<!-- Trigger the Modal -->
+			<img id="myImg5"  src="images/post vende mas rapido.png" alt="Snow" style="width:100%;max-width:300px">
+
+			<!-- The Modal -->
+			<div id="myModal5" class="modal">
+
+			  <!-- The Close Button -->
+			  <span class="close5">&times;</span>
+
+			  <!-- Modal Content (The Image) -->
+			  <img class="modal-content" id="img05">
+
+			  <!-- Modal Caption (Image Text) -->
+			  <div id="caption5"></div>
+			</div>			
+				
+				
+				
+				</div>
+				
+			<div class="TwitterArte2">
+				
+			<img id="myImg6"  src="images/post vende mas rapido.png" alt="Snow" style="width:100%;max-width:300px">
+
+			<!-- The Modal -->
+			<div id="myModal6" class="modal">
+
+			  <!-- The Close Button -->
+			  <span class="close6">&times;</span>
+
+			  <!-- Modal Content (The Image) -->
+			  <img class="modal-content" id="img06">
+
+			  <!-- Modal Caption (Image Text) -->
+			  <div id="caption6"></div>
+			</div>	
+				
+				
+				
+				</div>
 			
 			</div>	
 			
@@ -342,8 +457,165 @@ window.onclick = function(event) {
 });
 	
 	  </script>	
+		<script>
+
+		// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+
+
+		</script>	
 	
 	
 	
+	<script>
+
+		// Get the modal
+	var modal = document.getElementById("myModal2");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg2");
+	var modalImg = document.getElementById("img02");
+	var captionText = document.getElementById("caption2");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close2")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+
+
+		</script>
+	
+	<script>
+
+		// Get the modal
+	var modal = document.getElementById("myModal3");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg3");
+	var modalImg = document.getElementById("img03");
+	var captionText = document.getElementById("caption3");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close3")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+
+
+		</script>
+	
+	
+	
+	<script>
+
+		// Get the modal
+	var modal = document.getElementById("myModal4");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg4");
+	var modalImg = document.getElementById("img04");
+	var captionText = document.getElementById("caption4");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close4")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+
+
+		</script>
+	
+	<script>
+
+		// Get the modal
+	var modal = document.getElementById("myModal5");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg5");
+	var modalImg = document.getElementById("img05");
+	var captionText = document.getElementById("caption5");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close5")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+
+
+		</script>
+	
+	
+	<script>
+
+		// Get the modal
+	var modal = document.getElementById("myModal6");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById("myImg6");
+	var modalImg = document.getElementById("img06");
+	var captionText = document.getElementById("caption6");
+	img.onclick = function(){
+	  modal.style.display = "block";
+	  modalImg.src = this.src;
+	  captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close6")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+
+
+		</script>
 	
 </html>
