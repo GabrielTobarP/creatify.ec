@@ -36,24 +36,23 @@
 		
 	<div class="menuContainer">
 		
-			<!--Desktop Menu -->
+		<!--Desktop Menu -->
 		
 	<header class="nav-down">
+		
+		
+	   <a href="home.html" target="_self"><img src="svg/logoAbCreatify.svg" style="padding-top: px;" width="52" alt="Contenido Redes sociales"/></a>
 	   
-	   <a href="http://postealo.ec/soporte.html" style="text-align: right; padding-top: 20px" target="new">Soportes      </a>
-	   <a href="http://postealo.ec/soporte.html" style="text-align: right; padding-top: 20px" target="new">Nosotros      </a>
-       <a href="home.html" target="_self"><img src="svg/logoCreatify.svg" width="120" style="padding: 5px" alt="Contenido Redes sociales"/></a>
-	   <a href="home.html" style="text-align: left; padding-top: 20px; padding-left: 5px;" target="_self"> Contactos </a> 
-       <a href="http://postealo.ec/contacto.html" style="text-align: left; padding-top: 20px" target="new">Iniciar sesión    </a>
+
 	
 	</header>
 		
-			<!--Mobile Menu -->
+		<!--Mobile Menu -->
 		
 		
 		<div class="navBarMobile">
 			
-		<div class="logoMobile"><a href="home.html" target="_self"><img src="svg/logoCreatify.svg" width="110" style="padding: 5px;text-align: left;" alt="Contenido Redes sociales"/></a>
+		<div class="logoMobile"><a href="home.html" target="_self"><img src="svg/logoAbCreatify.svg" width="55" style="padding-top: 15px;text-align: left;" alt="Contenido Redes sociales"/></a>
 			</div>
 		<div class="iconMenuMobile">
 	    <button id="boton1" onclick="toggle_div_fun('menuMobile');"><img src="svg/mobileMenuIcon.svg" width="35"  alt=""/></button> 
@@ -63,6 +62,7 @@
 		
 		<div class="menuMobile">
 		<nav id="menumobile">
+			
 	    	<a href="home.html" target="_self">Iniciar Sesión </a> 
 	    	<a href="http://postealo.ec/soporte.html" target="new">Soporte      </a>
 			<a href="http://postealo.ec/contacto.html" target="new">Contacto    </a>
@@ -71,93 +71,97 @@
 			</nav>
 		
 		</div>
-		 
-	</div>
+		
+		
+		<div class="usuarioContainer">
+		
+		<span>Hola, </span>
+		<div id="nombreUsuario" style="padding-right: 20px"><p>Diana</p></div>
+		
+		<div class="dropdown">
+			
+	  <button  onclick="myFunction()" class="dropbtn" style="width: 40px;height: 40px;" ></button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a href="#">Perfil</a>
+		<a href="#">Biblioteca</a>
+		<a href="#">Logout</a>
+		  </div>
+		</div>
+			
+		</div>
+		
+		</div>
+		
+		
+		
+	<!--Main Section -->
+		
 		
 	<main>
 		
-		<div class="cabezeraContainer">
+		<div class="cabezera">
+		
+		
+		<div class="preguntasClaveContenido">
+			
+			<h2>Selecciona el mes <br> y el objetivo de tu contenido</h2>
+			
+			<div class="dropdowns">
 			
 			
-		<div class="selectorDeContenido">
+			<div class="dropdownContenidoContainer">
+				
+			<div class="tituloMenu">
 			
-		<h2>Selecciona el mes <br> y el objetivo de tu contenido</h2>
-			
-			
-		<div class="titulosContainer2">
-			
-			
-		<div class="tituloMenu" style="margin-right: 6px;">
-			
-		<h3>Objetivo</h3>
+			<h3 style="margin-right: 6px;">Objetivo:</h3>
 		   
-	    </div>
+	    	</div>
 			
-			
-		<div class="dropdown">
-			
-		<button class="dropbtn"><h3 style="color: #1F8AE6;">Escoge el objetivo de tu campaña</h3></button>
+			<div class="btn-group">
+			  <button class="btn-toggle"  type="button">Escoge el objetivo de tu campaña</button>
+			  <ul class="dropdown-menu">
+				<li><a href="#">Potenciar las Ventas</a></li>
+				<li><a href="#">Hacer Comunidad</a></li>
+				<li><a href="#">Aumentar la Visibilidad de tu Marca</a></li>
+				<li><a href="#">Contenido Variado</a></li>
+			  </ul>
+					</div>
+					   </div>
+				
+				
+				<div class="dropdownContenidoContainer">
 					
-		<div class="dropdown-content">
+			<div class="tituloMenu">
 			
-			<a href="#">Potenciar las Ventas</a>
-			<a href="#">Hacer Comunidad</a>
-			<a href="#">Aumentar la Visibilidad de tu Marca</a>
-			<a href="#">Contenido Variado</a>
-			
-	
-		  </div>
-			
-		</div>	
-			
-		</div>		
-			
-			
-		<div class="titulosContainer">
-			
-			
-		<div class="tituloMenu" style="margin-right: 6px;">
-			
-		<h3>Mes:</h3>
+			<h3>Mes:</h3>
 		   
-	    </div>
+	    	</div>
 			
-			
-		<div class="dropdown">
-			
-		<button class="dropbtn"><h3 style="color: #1F8AE6;">Escoge el mes</h3></button>
-					
-		<div class="dropdown-content">
-			
-			<a href="#">Enero</a>
-			<a href="#">Febrero</a>
-			<a href="#">Marzo</a>
-			<a href="#">Abril</a>
-			<a href="#">Mayo</a>
-			<a href="#">Junio</a>
-			<a href="#">Julio</a>
-			<a href="#">Agosto</a>
-			<a href="#">Septiembre</a>
-			<a href="#">Octubre</a>
-			<a href="#">Noviembre</a>
-			<a href="#">Diciembre</a>
-	
-		  </div>
-			
-		</div>	
-			
-		</div>	
-			
-			
-			
+			<div class="btn-group2">
+			  <button class="btn-toggle2"  type="button">Escoge el mes</button>
+			  <ul class="dropdown-menu2">
+				<li><a href="#">Enero</a></li>
+				<li><a href="#">Febrero</a></li>
+				<li><a href="#">Marzo</a></li>
+				<li><a href="#">Abril</a></li>
+				<li><a href="#">Mayo</a></li>
+				<li><a href="#">Junio</a></li>
+				<li><a href="#">Julio</a></li>
+				<li><a href="#">Agosto</a></li>
+				<li><a href="#">Septiembre</a></li>
+				<li><a href="#">Octubre</a></li>
+				<li><a href="#">Noviembre</a></li>
+				<li><a href="#">Diciembre</a></li>
+			  </ul>
+					</div>
+					   </div>
+				</div>
 		</div>
 			
 			
+			
 		<div class="creditos">
-			
-			
-			
-			
+		
 		<div class="creditosContainer">
 			<h2>Créditos disponibles</h2>
 			
@@ -165,38 +169,133 @@
 			
 			 <button >Aprobar</button> 
 			
-			</div>	 
-			
-			
-			
-		</div>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		
-		
-		
-		
+				</div>	 
+			</div>	
 		</div>
 		
 		
 		
+		<div class="tituloMes">
+		
+		<h1>Calendario de<br>
+			Enero</h1>
+		</div>
+		
+		<div class="mainIdeasContainer">
+		
+		<div class="ideasPostContainer">
+			
+		<div class="ideaPost">
+			
+			<div class="tituloIdeaPost">
+				<h2> Idea uno título</h2>
+				<h3> Descripción: qué es y para que sirve </h3>
+				</div>		
+			</div>
+		<div class="enviarBtn">
+		<button>Empezar</button> 
+			
+			</div>
+		</div>
+		
+		<div class="ideasPostContainer">
+			
+		<div class="ideaPost">
+			
+			<div class="tituloIdeaPost">
+				<h2> Idea uno título</h2>
+				<h3> Descripción: qué es y para que sirve </h3>
+				</div>		
+			</div>
+		<div class="enviarBtn">
+		<button>Empezar</button> 
+			
+			</div>
+		</div>
+		<div class="ideasPostContainer">
+			
+		<div class="ideaPost">
+			
+			<div class="tituloIdeaPost">
+				<h2> Idea uno título</h2>
+				<h3> Descripción: qué es y para que sirve </h3>
+				</div>		
+			</div>
+		<div class="enviarBtn">
+		<button>Empezar</button> 
+			
+			</div>
+		</div>
+		<div class="ideasPostContainer">
+			
+		<div class="ideaPost">
+			
+			<div class="tituloIdeaPost">
+				<h2> Idea uno título</h2>
+				<h3> Descripción: qué es y para que sirve </h3>
+				</div>		
+			</div>
+		<div class="enviarBtn">
+		<button>Empezar</button> 
+			
+			</div>
+		</div>
+		<div class="ideasPostContainer">
+			
+		<div class="ideaPost">
+			
+			<div class="tituloIdeaPost">
+				<h2> Idea uno título</h2>
+				<h3> Descripción: qué es y para que sirve </h3>
+				</div>		
+			</div>
+		<div class="enviarBtn">
+		<button >Empezar</button> 
+			
+			</div>
+		</div>
+		<div class="ideasPostContainer">
+			
+		<div class="ideaPost">
+			
+			<div class="tituloIdeaPost">
+				<h2> Idea uno título</h2>
+				<h3> Descripción: qué es y para que sirve </h3>
+				</div>		
+			</div>
+		<div class="enviarBtn">
+		<button >Empezar</button> 
+			
+			</div>
+		</div>
+		<div class="ideasPostContainer">
+			
+		<div class="ideaPost">
+			
+			<div class="tituloIdeaPost">
+				<h2> Idea uno título</h2>
+				<h3> Descripción: qué es y para que sirve </h3>
+				</div>		
+			</div>
+		<div class="enviarBtn">
+		<button>Empezar</button> 
+			
+			</div>
+		</div>
+		</div>
 		
 		
 		
+		
+		
+		
+   </main>
+			
+		
+		
+
+	 
 	
-	</main>
-		
 	<!--Footer -->
 	
 	<footer>
@@ -219,25 +318,92 @@
 		<h4>© POSTEALO.EC<br>
 			© MARKETINGPARATODOS<br>
 			All rights reserved</h4>
-			
+		
 	</div>
 
 	</footer>
 		
 	</div>
+	
 </body>
 	
 	
+	<script>
+	$(".btn-toggle2").on("click", function() {
+  $('.dropdown-menu2').toggleClass('open');
+});
+$(".dropdown-menu2 li").on("click", function() {
+  $('.btn-toggle2').text($(this).text());
+  $('.dropdown-menu2').removeClass('open');
+});
+	</script>
 	
 	
+		<script>
+	$(".btn-toggle").on("click", function() {
+  $('.dropdown-menu').toggleClass('open');
+});
+$(".dropdown-menu li").on("click", function() {
+  $('.btn-toggle').text($(this).text());
+  $('.dropdown-menu').removeClass('open');
+});
+	</script>
+	<!--Script Dropdown Contenido -->
+	
+	<script>
+
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdownContenido").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtnContenido')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content-contenido");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+	
+</script>	
 	
 	
+	<!--Script Dropdown usuario -->
 	
-	
+	<script>
+
+	/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+		
+	</script>	
 	
 	<!--TOGGLE AND CLOSE MOBILE MENU-->
-	
-<script>	
+
+	<script>	
 			
     var $searchBox = $('#menumobile');
 	var $searchTrigger = $('#boton1');  
@@ -257,11 +423,11 @@
 	
 	  </script>
 	  
-<script>	
+	<script>	
 			
     var $searchBox = $('#menumobile');
 	var $searchTrigger = $('#btnCerrar');  
-		 
+		  
 	$searchTrigger.on("click", function(e){
     e.preventDefault();
     e.stopPropagation();
@@ -275,11 +441,6 @@
     };
 });
 	
-	  </script>
-	
-	
-	
-	
-	
-	
+	  </script>	
+		
 </html>

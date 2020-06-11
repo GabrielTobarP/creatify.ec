@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 
 /* GENERAL */
 
@@ -35,6 +35,7 @@ a:-webkit-any-link {
     text-decoration: none;
 }
 
+
 h1{
 	
 	font-family: 'Montserrat', sans-serif;
@@ -56,7 +57,7 @@ h2{
 h3{
 	
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 0.95rem;
 	
 }
@@ -83,12 +84,12 @@ h5{
 @media screen {
 
 .mainContainer {
-	grid-column: 1/3;
+	
 	background-color:#fafafa;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr ;
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 	
 }
 
@@ -103,8 +104,9 @@ h5{
     top: 0;
     z-index: 101;
 	font-size: 0.95rem;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 3;
 	grid-column: 1/4;
-	border-bottom: 1px #C6C6C6 solid;
 	background-color: #FAFAFA;	
 	display: -ms-grid;
     display: grid;
@@ -114,24 +116,32 @@ h5{
 	
 	
  header {
-    grid-column: 2/6;
-    height: 5.2rem;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    height: 3.5rem;
     width: 100%;
     display: -webkit-box;
-    display: -moz-box;
     display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+	 text-align: left;
 	
 	}
 	
 	
 	header > a
 {
-    flex:1 1 auto;
+    -webkit-box-flex:1;
+        -ms-flex:1 1 auto;
+            flex:1 1 auto;
     text-align:center;
 	margin: 5px;
     color: #1A1D3E;
@@ -146,8 +156,12 @@ h5{
 	
 	.menu_mobile {
     font-size: 0.95rem;
-    flex: 0;
-    order: 3;
+    -webkit-box-flex: 0;
+        -ms-flex: 0;
+            flex: 0;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
     visibility: visible;
     text-align: left;
     padding-right: 10px;
@@ -155,15 +169,33 @@ h5{
 	
     .navBarMobile {
 	height: 0px;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 6;
 	grid-column: 1/7;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	visibility: hidden;	
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	visibility: visible;	
     }
-	
+	.logoMobile {
+	-webkit-box-flex: 3;
+	    -ms-flex-positive: 3;
+	        flex-grow: 3;
+    padding-left: 10px;
+	visibility: hidden;
+		
+}
 	
   #menumobile {
-    flex: 1;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #FAFAFA;
     visibility: visible;
@@ -172,7 +204,9 @@ h5{
     height: 0px;
     text-align: right;
     padding-top: 55px;
-    order: 20;
+    -webkit-box-ordinal-group: 21;
+        -ms-flex-order: 20;
+            order: 20;
   }
 
   #menumobile a {
@@ -210,8 +244,12 @@ h5{
   }
 
   #btnCerrar {
-    flex: 1;
-    order: 5;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
     padding-right: 320px;
     border: 0px;
     text-align: left;
@@ -219,61 +257,387 @@ h5{
     outline: none;
     background-color: transparent;
   }
+	
+	 /* menu de usuario*/
+	
+	.usuarioContainer {
+	padding-top: 5px;
+	margin-right:50px;
+ 	position: absolute;
+	right: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+		
+}
 
-	/* MAIN INFO */
 	
-	
-		/* Dropdown Button */
+	 /* Dropdown Button */
 	.dropbtn {
+	  margin-top: 10px;
+	  background-image:url("svg/iconBook.svg");
+	  background-repeat: no-repeat;
+	  color: white;
 	  background-color: transparent;
-	  color: black;
 	  border: none;
+	  cursor: pointer;
+	}
+
+	/* Dropdown button on hover & focus */
+	.dropbtn:hover, .dropbtn:focus {
+	  background-color: transparent;
 	}
 
 	/* The container <div> - needed to position the dropdown content */
 	.dropdown {
-	 
+	  position: relative;
+
 	}
 
 	/* Dropdown Content (Hidden by Default) */
 	.dropdown-content {
+		
+	  right: 0;
 	  display: none;
 	  position: absolute;
 	  background-color: #fafafa;
 	  min-width: 160px;
-	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  -webkit-box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.1);
+	          box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.1);
 	  z-index: 1;
-		
+	  border-radius: 5px 5px 5px 5px;
+      border-radius:-moz- 5px 5px 5px 5px;
+      border-radius:-webkit- 5px 5px 5px 5px;
 	}
 
 	/* Links inside the dropdown */
 	.dropdown-content a {
+		
 	  color: #1A1D3E;
-	  padding: 12px 16px;
+	  padding: 20px 33px;
 	  text-decoration: none;
 	  display: block;
+	  text-align: right;
+		
 	}
 
 	/* Change color of dropdown links on hover */
-	.dropdown-content a:hover {background-color:#fafafa;align-content: 20px;}
+	.dropdown-content a:hover {background-color: transparent}
 
-	/* Show the dropdown menu on hover */
-	.dropdown:hover .dropdown-content {
-		
-		display: block;
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		width: 200px;}
-
-	/* Change the background color of the dropdown button when the dropdown content is shown */
-	.dropdown:hover .dropbtn {background-color: transparent;}
+	/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+	.show {display:block;}
 
 
+	/* MAIN  */
 	
+	main {
 	
+	grid-column: 1/4;
+	display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr ;
+	grid-template-columns: 1fr;
+	}
+	
+	.cabezera {
+	grid-column: 1/2;
+	padding-left: 50px;
+	padding-right: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px #C6C6C6 solid;
+    background-color: #F3F3F3;
+	padding-top: 10px;
+}
 
+.preguntasClaveContenido {
+	grid-column: 1/2;
+	padding-top: 20px;
 	
+}
+
+.dropdowns {
+	margin-top: 25px;
+}
+
+
+.tituloMenu {
+	flex: 1;
+	padding-left: 7px;
+}
+
+
+.dropdownContenidoContainer {
+	
+	border: 1px solid #C6C6C6;
+    border-radius: 5px 5px 5px 5px;
+    border-radius: -moz- 5px 5px 5px 5px;
+    border-radius: -webkit- 5px 5px 5px 5px;
+	width: 400px;
+	margin-bottom: 15px;
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: baseline;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 150px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  border-radius:-moz- 5px 5px 5px 5px;
+  border-radius:-webkit- 5px 5px 5px 5px;
+  border: 1px solid #C6C6C6;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  color: #464646;
+  transition: all .3s;
+  transform: translate(-300%);
+}
+
+.dropdown-menu.open {
+  transform: translate(0%);
+}
+
+.btn-group {
+  position: relative;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+	flex: 7;
+}
+
+.dropdown-menu li {
+  margin: 15px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  
+}
+
+.dropdown-menu a{
+  margin: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  border-radius:-moz- 5px 5px 5px 5px;
+  border-radius:-webkit- 5px 5px 5px 5px;
+}
+
+
+.dropdown-menu a:hover {color: #1F8AE6}
+
+
+.btn-toggle {
+	color: #1F8AE6;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 0.95rem;
+	text-align: left;
+	
+}
+
+
+.dropdown-menu2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 150px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 13px;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  border-radius:-moz- 5px 5px 5px 5px;
+  border-radius:-webkit- 5px 5px 5px 5px;
+  border: 1px solid #C6C6C6;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  transition: all .3s;
+  transform: translate(-300%);
+}
+
+.dropdown-menu2.open {
+  transform: translate(0%);
+}
+
+.btn-group2 {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+	flex: 8;
+}
+
+.dropdown-menu2 li {
+  margin: 10px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+.dropdown-menu2 a{
+  margin: 5px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+
+.dropdown-menu2 a:hover {color: #1F8AE6}
+
+
+.btn-toggle2 {
+	color: #1F8AE6;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 0.95rem;
+	text-align: left;
+}
+
+
+
+.creditos {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .creditosContainer {
+    border: 1px solid #C6C6C6;
+    border-radius: 5px 5px 5px 5px;
+    border-radius: -moz- 5px 5px 5px 5px;
+    border-radius: -webkit- 5px 5px 5px 5px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+  }
+  .creditosContainer button {
+    background-image: url("svg/ComprarCreditosBtn.svg");
+    width: 200px;
+    height: 120px;
+    background-color: transparent;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: transparent;
+  }
+  .creditosContainer h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    letter-spacing: 1px;
+  }
+  .creditosContainer h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+.tituloMes {
+    grid-column: 1/3;
+    background-color: #1A1D3E;
+    padding: 10px;
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+  }
+	
+	.tituloMes h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+	color: white;
+	
+	}
+	
+	.ideasPostContainer {
+    grid-column: 1/3;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #C6C6C6;
+    border-radius: 7px 7px 7px 7px;
+    border-radius: -moz- 7px 7px 7px 7px;
+    border-radius: -webkit- 7px 7px 7px 7px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+  }
+  .ideaPost {
+    flex: 6;
+  }
+  .enviarBtn {
+    flex: 1;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+  }
+  .tituloIdeaPost {
+    padding-top: 10px;
+    padding-bottom: 10px;
+	  
+  }
+  .enviarBtn button {
+    background-image: url("svg/empezartBtn.svg");
+    width: 120px;
+    height: 75px;
+    background-color: transparent;
+    color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: transparent;
+  }
+	
+	.mainIdeasContainer {
+	grid-auto-columns: 1/4;
+}
 	
 	/* FOOTER */
 	
@@ -281,7 +645,9 @@ h5{
 	footer {
     margin-left: 0px;
     background-color: #1F8AE6;
-    grid-column: 1/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
     height: auto;
     display: -ms-grid;
     display: grid;
@@ -296,6 +662,10 @@ h5{
 
   .brandFooterContainer {
 	  
+	-ms-grid-column: 2;
+	  
+	-ms-grid-column-span: 1;
+	  
 	grid-column: 2/3;
     padding-right: 50px;
     text-align: right;
@@ -303,6 +673,8 @@ h5{
   }
 
   .brandFooterContainer h4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     color: white;
     font-size: 0.75rem;
@@ -315,20 +687,35 @@ h5{
 
   .menuFooter {
 	  
+	display: -webkit-box;
+	  
+	display: -ms-flexbox;
+	  
 	display: flex;
-	flex-wrap: nowrap;
-	flex-direction:column;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	    -ms-flex-direction:column;
+	        flex-direction:column;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     visibility: visible;
     text-align: left;
 	padding-top: 50px;
-	align-content:center;
+	-ms-flex-line-pack:center;
+	    align-content:center;
 	padding-left: 50px;
   }
 
   .menuFooter a {
 	  
-	flex: 1;
+	-webkit-box-flex: 1;
+	  
+	    -ms-flex: 1;
+	  
+	        flex: 1;
     color: white;
     text-decoration: none;
     font-size: 1.2em;
@@ -342,163 +729,20 @@ h5{
   }
 
   .post3UsdWhitefooter {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/2;
     visibility: visible;
   }
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-.titulosContainer {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	border: 1px solid #C6C6C6;
-	border-radius: 5px 5px 5px 5px;
-	border-radius:-moz- 5px 5px 5px 5px;
-	border-radius:-webkit- 5px 5px 5px 5px;
-	padding: 10px;
-	margin-top: 20px;
-	width: 200px;
-
-	
-	
-}
-
-.selectorDeContenido {
-	padding: 10px;
-	margin-top: 20px;
-	grid-column: 1/2;
-	
-}
-
-main {
-	display: grid;
-	grid-column: 1/3;
-}
-
-.cabezeraContainer {
-	grid-column: 1/3;
-	padding-left: 50px;
-	padding-right: 50px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
-.dropbtn {
-	color: #1F8AE6;
-}
-
-.titulosContainer2 {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	border: 1px solid #C6C6C6;
-	border-radius: 5px 5px 5px 5px;
-	border-radius:-moz- 5px 5px 5px 5px;
-	border-radius:-webkit- 5px 5px 5px 5px;
-	padding: 10px;
-	margin-top: 20px;
-	width: 400px;
-}
-
-.creditos {
-	grid-column: 2/3;
-	display: flex;
-flex-direction: row;
-	justify-content: flex-end;
-	padding-top: 30px;
-	padding-right: 20px;
-	
-	
-	
-}
-
-.creditosContainer {
-	
-	border: 1px solid #C6C6C6;
-	border-radius: 5px 5px 5px 5px;
-	border-radius:-moz- 5px 5px 5px 5px;
-	border-radius:-webkit- 5px 5px 5px 5px;
-	width: 200px;
-	height: 200px;
-	display: flex;
-flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	text-align: center;
-	padding-top: 10px;
-}
-
-
-.creditosContainer button{
-	
-	
- background-image: url("svg/ComprarCreditosBtn.svg");
-	width: 200px;
-	height: 120px;
-	background-color: transparent;
-	color: transparent;
-	background-repeat: no-repeat;
-	background-position: center;
-	border-color: transparent;
-
-	
-	
-}
-
-.creditosContainer h1{
-	
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
-	font-size: 4rem;
-	letter-spacing: 1px;
-	
-
-}
-
-.creditosContainer h2{
-	
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	font-size: 1.4rem;
-	letter-spacing: 1px;
-
-	
-
-}
 
 
 
