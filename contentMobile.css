@@ -95,6 +95,7 @@ h5{
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+	border-bottom: 1px #C6C6C6 solid;
    
 }
 
@@ -569,6 +570,20 @@ h5{
     padding-top: 10px;
     padding-bottom: 10px;
 	 padding-left: 10px;
+  }
+.tituloIdeaPost h2{
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 1.2rem;
+	  
+  }
+	
+	.tituloIdeaPost h3{
+    font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	font-size: 0.95rem;
+	color: #707070;
+	  
   }
   .enviarBtn button {
     background-image: url("svg/empezartBtn.svg");

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="47" viewBox="0 0 47 47">
+  <g id="Group_52" data-name="Group 52" transform="translate(-804 -342)">
+    <rect id="Rectangle_38" data-name="Rectangle 38" width="47" height="47" rx="6" transform="translate(804 342)" fill="#ffbb39"/>
+    <g id="Group_42" data-name="Group 42" transform="translate(806.98 352.883)">
+      <g id="Group_41" data-name="Group 41" transform="translate(0)">
+        <path id="Path_49" data-name="Path 49" d="M858.114,630.758c-2.969-7.4-11.113-12.371-20.265-12.371s-17.294,4.972-20.265,12.37a1.325,1.325,0,0,0,0,.989c2.973,7.4,11.117,12.37,20.265,12.37s17.292-4.971,20.265-12.37a1.323,1.323,0,0,0,0-.988Zm-20.265,10.706c-7.866,0-14.859-4.082-17.594-10.212,2.734-6.13,9.726-10.212,17.594-10.212s14.862,4.082,17.595,10.212c-2.736,6.13-9.728,10.212-17.595,10.212Zm0,0" transform="translate(-817.488 -618.387)" fill="#fff"/>
+      </g>
+      <path id="Path_50" data-name="Path 50" d="M905.429,651.158a7.737,7.737,0,1,0,7.737,7.736,7.745,7.745,0,0,0-7.737-7.736Zm0,12.821a5.084,5.084,0,1,1,5.084-5.085,5.091,5.091,0,0,1-5.084,5.085Zm0,0" transform="translate(-885.143 -646.03)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
