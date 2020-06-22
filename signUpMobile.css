@@ -2,6 +2,7 @@
 
 /* GENERAL */
 
+
 body, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin: 0;
     padding: 0;
@@ -112,6 +113,8 @@ html{ width:100%; height:100%;
 }
 
 .titulo {
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 1;
 	grid-column: 1/2;
 	margin-left: 0px;
 	margin-top: 20px;
@@ -136,6 +139,8 @@ html{ width:100%; height:100%;
 	 
 
 .signUpContainer {
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 1;
 	grid-column: 1/2;
 	margin-top: 40px;
 	margin-right: 0px;
@@ -149,9 +154,15 @@ html{ width:100%; height:100%;
 	border-radius: 5px 5px 5px 5px;
     border-radius:-moz- 5px 5px 5px 5px;
     border-radius:-webkit- 5px 5px 5px 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
 	}
 	
 	.titulosignUp {
@@ -182,7 +193,31 @@ html{ width:100%; height:100%;
     font-weight: 400;
 	}
 	
+	input[type=password] {
+		
+	border-left-color: transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 0.95rem;
+	margin-bottom: 40px;
+	width: 95%;
+	border-radius: 0px 0px 0px 0px;
+    border-radius:-moz- 0px 0px 0px 0px;
+    border-radius:-webkit- 0px 0px 0px 0px;
+	border-width: 1px;
+			
+
+}
 	
+	
+	
+	input[type=password]:focus{
+		
+		outline: none;
+
+}
 	
 	input[type=email] {
 		
@@ -234,14 +269,22 @@ html{ width:100%; height:100%;
 	
 	
 	.nombresContainer {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
 
 	}
 
 	.nombre {
-		flex: 1;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1;
+		        flex: 1;
 
 	}
 
@@ -252,10 +295,19 @@ html{ width:100%; height:100%;
 	
 	
 	.checkboxContainer {
+	display:-webkit-box;
+	display:-ms-flexbox;
 	display:flex;
-	flex-direction: row; 
-	justify-content: left; 
-	align-items:baseline;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row; 
+	-webkit-box-pack: left; 
+	    -ms-flex-pack: left; 
+	        justify-content: left; 
+	-webkit-box-align:baseline; 
+	    -ms-flex-align:baseline; 
+	        align-items:baseline;
 		margin-top: 10px;
 }
 	

@@ -64,9 +64,9 @@
 		<nav id="menumobile">
 			
 	    	<a href="home.html" target="_self">Iniciar Sesión </a> 
-	    	<a href="http://postealo.ec/soporte.html" target="new">Soporte      </a>
-			<a href="http://postealo.ec/contacto.html" target="new">Contacto    </a>
-			<a href="http://postealo.ec/contacto.html" target="new">Nosotros    </a>
+	    	<a href="http://postealo.ec/soporte.html" target="_self">Soporte      </a>
+			<a href="http://postealo.ec/contacto.html" target="_self">Contactos    </a>
+			<a href="http://postealo.ec/precios.html" target="_self">Precios    </a>
           	<button id="btnCerrar" onclick="toggle_div_fun('menumobile');"><img img src="svg/xClose.svg" width="30" alt=""/></button>
 			</nav>
 		
@@ -110,52 +110,52 @@
 			
 			<h2 id="ideaTitulo" style="text-align: left">Idea uno título</h2>
 			
-			<h3 id="ideaSubitulo" style="text-align: left">Idea uno subtítulo</h3>
-				
-			<h4 id="fecha" style="text-align: left; margin-bottom: 20px; margin-top: 10px">Fecha</h4>
+			<h4 id="fecha" style="text-align: left; margin-bottom: 20px; margin-top: 15px">Fecha</h4>
 			
-			<h5 style="text-align: left;margin-bottom: 5px;">Redes sociales</h5>
+			<h5 style="text-align: left;margin-bottom: 5px;">Escogle los formato</h5>
 				
 			  
 		<fieldset class="checkboxContainer">
    		
 		<div class="item">
         <input type="checkbox" id="a">
-        <label for="a">Facebook</label>
+        <label for="a">Cuadrado</label>
         </div>
    
 		<div class="item">
         <input type="checkbox" id="b">
-        <label for="b">Instagram</label>
+        <label for="b">Vertical</label>
         </div>
 			
 		<div class="item">
         <input type="checkbox" id="c">
-        <label for="c">Twitter</label>
+        <label for="c">Horizontal</label>
         </div>
 			
 			
 		</fieldset>
-					  
-		      
-          </div>
+			  
+	      <img src="svg/formatos.svg" width="300px;" alt=""/> </div>
 			
 		  <div class="formulariosContainer">
   
   		  <form action="/action_page.php">
 			
-		  <label for="fname" >Pregunta 1</label><br>
-		  <textarea type="text" id="pregunta1" name="fname" style="width: 95%; height: 40px;overflow: auto;margin-top: 10px;" wrap="soft"  ></textarea><br>
+		  <label for="fname" >Título</label><br>
+		  <textarea type="text" id="titulo" name="titulo" style="width: 95%; height: 30px;overflow: auto;margin-top: 10px;" wrap="soft"  ></textarea><br><br>
 			
-			<label for="fname1" >Pregunta 2</label><br>
+			<label for="fname1" >Pregunta 1</label><br>
+		  <textarea type="text" id="pregunta1" name="fname1" style="width: 95%; height: 40px;overflow: auto; " wrap="soft"  ></textarea><br>
+			
+			<label for="fname2" >Pregunta 2</label><br>
 		  <textarea type="text" id="pregunta2" name="fname2" style="width: 95%; height: 40px;overflow: auto;" wrap="soft"  ></textarea><br>
-			
-			<label for="fname2" >Pregunta 3</label><br>
+			  
+			  <label for="fname2" >Pregunta 3</label><br>
 		  <textarea type="text" id="pregunta3" name="fname3" style="width: 95%; height: 40px;overflow: auto;" wrap="soft"  ></textarea><br>
 			  
 			  
 			<label for="fname3" >Subir Archivos</label><br>
-		  <textarea type="text" id="pregunta4" name="fname3" style="width: 95%; height: 70px;overflow: auto;" wrap="soft"  ></textarea><br>
+		  <textarea type="text" id="files" name="files" style="width: 95%; height: 70px;overflow: auto;" wrap="soft"  ></textarea><br>
 			  
 		  <h4 style="margin-bottom: 20px;margin-top: 10px;"> Si deseas ser notificado por whatsapp cuando tengamos contenido para tí, ingresa un número</h4>
 			  
@@ -335,8 +335,7 @@
 			
 			<div class="aprobacionContainer">
 				
-				<h4 style="margin-top: 20px;text-align: left;margin-bottom: 50px">Presiona el boton aprobar cuando ya desees descargar el arte final<br>
-				Nota: una vez que apruebas un arte se consumirá uno de tus créditos</h4>
+				<h4 style="margin-top: 20px;text-align: left;margin-bottom: 50px">Presiona el boton aprobar cuando ya desees descargar el arte final<br></h4>
 				
 			<fieldset class="checkboxContainer">
 
@@ -376,10 +375,10 @@
 	<nav class="menuFooter">
 			
 		<a href="home.html" target="_self">Inicio       </a> 
-		<a href="http://postealo.ec/soporte.html" target="new">Soporte      </a>
-		<a href="http://postealo.ec/contacto.html" target="new">Contacto    </a>
-	    <a href="http://postealo.ec/contacto.html" target="new">Nosotros    </a>
-		
+		<a href="http://postealo.ec/soporte.html" target="self">Soporte      </a>
+	    <a href="http://postealo.ec/precios.html" target="self">Precios    </a>
+		<a href="http://postealo.ec/nosotros.html" target="self">Nosotros    </a>
+	
 	</nav>
 			
 	<div class="brandFooterContainer"> 
@@ -388,10 +387,12 @@
 			<a href="https://www.facebook.com/postealo.ec/" target="new"><img src="svg/FacebookBtnWhite.svg" width="25px" style="margin-right: 10px;margin-left: 10px;" alt=""/></a>
 	        <a href="https://www.instagram.com/postealodesign/" target="new"><img src="svg/instagramBtnWhite.svg" width="25px"  alt=""/></a> 
 			
-		<h4>© POSTEALO.EC<br>
-			© MARKETINGPARATODOS<br>
+		<h4>Copyright © 2020 Creatify.<br>
 			All rights reserved</h4>
 		
+		<a href="condicionesDeUso.html"> <h4>Condiciones de Uso</h4> </a>
+		<a href="privacidad.html"> <h4>Privacidad</h4> </a>
+			
 	</div>
 
 	</footer>
